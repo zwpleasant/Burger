@@ -1,0 +1,26 @@
+{
+  "name": "Taco-Tracker",
+  "version": "1.0.0",
+  "description": "A restaurant app that lets users input the names of burgers they'd like to eat. The application has the ability to store the burger lists and update them on the fly after you've \"eaten\" them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwpleasant/Taco-Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zwpleasant/Taco-Tracker/issues"
+  },
+  "homepage": "https://github.com/zwpleasant/Taco-Tracker#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0"
+  }
+}
