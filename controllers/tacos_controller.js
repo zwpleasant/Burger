@@ -7,7 +7,7 @@ var taco = require("../models/taco.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-    taco.all(function(data) {
+    taco.selectAll(function(data) {
       var hbsObject = {
         tacos: data
       };
@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/tacos", function(req, res) {
-    cat.create([
+    cat.insertOne([
       "taco_name", "devoured"
     ], [
       req.body.name, req.body.sleepy
@@ -32,7 +32,7 @@ router.put("/api/tacos/:id", function(req, res) {
   
     console.log("condition", condition);
   
-    taco.update({
+    taco.updateOne({
       devoured: req.body.devoured
     }, condition, function(result) {
       if (result.changedRows == 0) {
