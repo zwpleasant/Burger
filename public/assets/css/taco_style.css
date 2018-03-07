@@ -1,0 +1,13 @@
+body {
+    background-color: orange;
+    text-align: center;
+}
+
+h1, h2 {
+    color: white;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+}
