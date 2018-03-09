@@ -9,6 +9,7 @@ li {
 }
 
 .create-update-form {
+  text-align: center;
   padding: 5px;
   margin: 5px;
   background: aqua;
@@ -16,4 +17,22 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.form-container {
+  text-align: center;
+}
+
+img {
+  width: 75%;
+  height: 75%;
+  border-radius: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }
