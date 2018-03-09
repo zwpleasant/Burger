@@ -1,7 +1,7 @@
 {
   "name": "Taco-Tracker",
   "version": "1.0.0",
-  "description": "A restaurant app that lets users input the names of burgers they'd like to eat. The application has the ability to store the burger lists and update them on the fly after you've \"eaten\" them.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

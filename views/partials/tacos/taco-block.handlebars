@@ -1,6 +1,8 @@
 <li>
-    {{taco_name}}
-    <button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
-        {{#if devoured}}Eat the Taco!{{/if}}
-    </button>
+	{{taco_name}}
+
+	<button class="change-devoured" data-id="{{id}}" data-newdevour="{{devoured}}">
+		{{#if devoured}}Taco has been eaten!{{else}}Eat the taco!{{/if}}
+	</button>
+
 </li>
