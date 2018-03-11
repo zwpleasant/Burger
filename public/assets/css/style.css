@@ -1,7 +1,15 @@
+.container {
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-container {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
 }
 
 .label {
@@ -10,17 +18,11 @@ li {
 
 .create-update-form {
   text-align: center;
-  padding: 5px;
-  margin: 5px;
   background: aqua;
 }
 
 .form-group {
   margin-bottom: 5px;
-}
-
-.form-container {
-  text-align: center;
 }
 
 img {
@@ -29,10 +31,6 @@ img {
   border-radius: 100%;
 }
 
-h1 {
-  text-align: center;
-}
-
-h2 {
+h1, h2 {
   text-align: center;
 }

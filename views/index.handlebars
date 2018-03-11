@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <h1>Taco-Tracker!</h1>
+    <h1>Taco-Tracker!</h1>  
   </div>
   <div class="row">
     <div class="col-md-4">
@@ -39,15 +39,51 @@
 
     <div class="form-group">
       <label for="ca">Taco Name:</label>
-      <input type="text" id="ca" name="taco_name">
+      <input type="text" id="tacoName">
     </div>
 
-    <div class="form-group">
-      <label for="devoured">Eaten?</label><br>
-      <input type="radio" name="devoured" value="1" checked> Eaten!<br>
-      <input type="radio" name="devoured" value="0"> Still Available
-    </div>
-
-    <button type="submit">Add Taco</button>
+    <button class="create-form submit" type="submit">Add Taco</button>
   </form>
 </div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<script>
+   $(".create-form").on("submit", function (event) {
+    // Make sure to preventDefault on a submit event.
+    event.preventDefault();
+    var newTaco = {
+      taco_name: $("#tacoName").val().trim()
+    };
+    console.log(newTaco);
+    // Send the POST request.
+    $.ajax("/api/tacos", {
+      type: "POST",
+      data: newTaco
+    }).then(
+      function () {
+        console.log("added a new taco!");
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
+  $(".change-devour").click(function (event) {
+    var updateEaten = {
+      devoured: true
+    };
+    var id = $(this).attr("id");
+    console.log(id);
+    // Send the PUT request.
+    $.ajax("/api/tacos/" + id, {
+      type: "PUT",
+      data: updateEaten
+    }).then(
+      function () {
+        console.log("taco has been eaten!");
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
+</script>

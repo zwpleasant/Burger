@@ -1,3 +1,3 @@
 INSERT INTO tacos (taco_name, devoured) VALUES ('carne asada', false);
 INSERT INTO tacos (taco_name, devoured) VALUES ('pork belly al pastor', true);
-INSERT INTO cats (taco_name, devoured) VALUES ('pescado', false);
+INSERT INTO tacos (taco_name, devoured) VALUES ('pescado', false);
