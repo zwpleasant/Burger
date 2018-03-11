@@ -4,13 +4,13 @@
   </div>
   <div class="row">
     <div class="col-md-4">
-      <h2>Eaten Tacos</h2>
+      <h2>Available Tacos</h2>
 
       <ul>
         {{#each tacos}}
-          {{#unless devoured}}
-            {{> tacos/taco-block devoured=true}}
-          {{/unless}}
+          {{#if devoured}}
+            {{> tacos/taco-block devoured=false}}
+          {{/if}}
         {{/each}}
       </ul>
     </div>
@@ -20,13 +20,13 @@
     </div>
 
     <div class="col-md-4">
-      <h2>Available Tacos</h2>
+      <h2>Eaten Tacos</h2>
 
       <ul>
         {{#each tacos}}
-          {{#if devoured}}
-            {{> tacos/taco-block devoured=false}}
-          {{/if}}
+          {{#unless devoured}}
+            {{> tacos/taco-block devoured=true}}
+          {{/unless}}
         {{/each}}
       </ul>
     </div>
