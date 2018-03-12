@@ -50,7 +50,6 @@
 
 <script>
    $(".create-form").on("submit", function (event) {
-    // Make sure to preventDefault on a submit event.
     event.preventDefault();
     var newTaco = {
       taco_name: $("#tacoName").val().trim()
@@ -63,7 +62,6 @@
     }).then(
       function () {
         console.log("added a new taco!");
-        // Reload the page to get the updated list
         location.reload();
       }
     );
@@ -81,7 +79,6 @@
     }).then(
       function () {
         console.log("taco has been eaten!");
-        // Reload the page to get the updated list
         location.reload();
       }
     );
