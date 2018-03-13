@@ -1,3 +1,13 @@
+body {
+  background-color: orange !important;
+}
+
+.col-md-4 {
+  background-color: white !important;
+  border: solid black 2px;
+  align-items: center;
+}
+
 .container {
   font-family: 'Roboto', sans-serif;
 }
@@ -18,7 +28,6 @@ li {
 
 .create-update-form {
   text-align: center;
-  background: aqua;
 }
 
 .form-group {
@@ -26,11 +35,15 @@ li {
 }
 
 img {
-  width: 75%;
-  height: 75%;
-  border-radius: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-h1, h2 {
+h1 {
+  text-align: center;
+  font-size: 48px !important;
+}
+
+h2 {
   text-align: center;
 }
