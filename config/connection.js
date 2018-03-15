@@ -3,11 +3,12 @@ var mysql = require("mysql");
 
 var connection = mysql.createConnection({
   port: 3306,
-  host: "localhost",
-  user: "root",
-  password: "Tucker10!",
-  database: "tacos_db"
+  host: "d6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  user: "a8g90tpzjbiiol7h",
+  password: "pje89affmmbdqvxg",
+  database: "necfdnyb3wnc64ko"
 });
+// var connection = mysql.createConnection('mysql://a8g90tpzjbiiol7h:pje89affmmbdqvxg@d6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/necfdnyb3wnc64ko');
 
 // Make connection.
 connection.connect(function(err) {
